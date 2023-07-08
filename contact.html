@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navContainer">
+        <div class="navSizer">
+
+            <div>
+                <img class="imgLogo" width="50px" src="assets/circle.svg" alt="circles logo">
+            </div>
+    
+            <div class="navLinks">
+                <ul class="navList">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Services</li>
+                </ul>
+            </div>
+    
+            <div>
+                <button class="ContactUs">Contact Us</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="contactForm">
+            <div class="contactTitle">
+                <h2>Contact Us</h2>
+            </div>
+        <div>
+        <form id="form"  class="theForm"  name="myForm">
+            <label for="fullName">Full Name*</label> <br>
+            <input class="inputName" type="text" placeholder="Enter your full name" name="fullName">
+            <br>
+            <div class="phoneEmail">
+                <div>
+                    <label for="">Email</label> <br>
+                <input class="inputEmail" type="text" placeholder="Enter your email address">
+                </div>
+                
+                <div class="phoneInputContainer">
+                    <label for="">Phone</label> <br>
+                    <input class="inputPhone" type="text" placeholder="Enter your phone number">
+                </div>
+            </div>
+            
+            
+            <br>
+            <label for="Message">Message</label>
+            <br>
+            <textarea class="message" name="Message" id="" cols="30" rows="10" placeholder="Write your message here ...."></textarea>
+            <br>
+          
+            <button onclick="submit()" class="Submitbtn">Submit</button>
+        </form>
+        </div>
+    </section>
+  
+    <section class="ContainerFooter">
+        <div class="footerCont">
+
+            <div class="footerLeft">
+              <img width="80px" src="assets/circle.svg" alt="circle">
+              <address>2972 Westheimer Rd Santa Ana, <br> Illinois 85486</address>
+            </div>
+    
+            <div class="footerRight">
+    
+              <div class="footerMenu">
+                <ul>
+                  <li>Team</li> <br>
+                  <li>Press</li>
+                </ul>
+              </div> 
+    
+              <div class="footerMenu">
+                <li>Services</li> <br>
+                <li>Projects</li>
+              </div>
+    
+              <div class="footerMenu">
+                <ul>
+                  <li>About Us</li> <br>
+                  <li>Privacy Policy</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>

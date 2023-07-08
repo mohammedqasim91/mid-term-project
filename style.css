@@ -2,65 +2,71 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
-.navContainer {
-    width: 100vw;
-    display: flex;
-    justify-content:space-evenly;
+/* This is body style */
+body{
+  background-color: rgba(244, 246, 252, 1);
+  font-family: sans-serif;
 }
 
+/* This is homepage navbar */
+.navContainer {
+  
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  
+  
+}
+.navSizer{
+  width: 800px;
+  display: flex;
+  justify-content:space-evenly;
+}
 .navList {
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     gap: 50px;
     
 }
 
 li {
 list-style: none;
-font-family:roboto;
+font-family: sans-serif;
 font-weight: bold;
+font-size: 12px;
+color: darkgray;
 }
 
 .imgLogo {
 margin-top:18px ;
 }
 
-.btnContactUs {
-margin-top: 16px;
-background-color: #072AC8;
-  border: 1px solid transparent;
-  
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.15385;
-  outline: none;
-  padding: 8px .8em;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
- 
+.ContactUs {
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color:rgba(7, 42, 200, 1);
+  color: aliceblue;
+  border: none;
 }
+
+/* This is Hero Section */
 
 .heroSection {
 display: flex;  
 flex-direction: column;
 gap: 30px;
 margin-top:20px;
+padding: 20px;
 align-items: center;
-width: 100vw;
+width: 100%;
 }
 
 .Container {
   display: flex;
- 
   justify-content:center;
-  width: 100vw;
+  width: 100%;
   gap: 100px;
   
  
@@ -73,7 +79,6 @@ width: 100vw;
   padding: 16px;
   align-items: center;
   justify-content: center;
-  
   height: 400px;
   width: 400px;
 }
@@ -89,30 +94,409 @@ width: 100vw;
 
 .cardone {
   position: absolute;
-  bottom: 400px;
-  right: 520px;
+  bottom: 300px;
+  right: 480px;
   width: 238px;
 }
  
 .cardtwo {
   position: absolute;
-top: 350px;
-right: 189px;
-width: 238px;
+  top: 425px;
+  right: 200px;
+  width: 238px;
 }
+
+.htag{
+  width: 300px;
+  font-size: 40px;
+}
+
+.ptag{
+  font-size: 18px;
+}
+
+.getBtn {
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color:rgba(7, 42, 200, 1);
+  color: aliceblue;
+  border: none;
+}
+
+.seeBtn {
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgba(244, 246, 252, 1);
+  color:rgb(147, 145, 145) ;
+  border: none;
+}
+
+/* This is Client Section */
 .logosLine {
   display: flex;
   justify-content: space-between;
-
   width: 58vw;
+  padding: 30px;
 }
-.htag{
+
+/* This is Project Section */
+
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  gap: 30px;
+}
+.projectsCard {
+display: flex;  
+flex-direction: column;
+background-color: rgb(255, 255, 255);
+}
+
+.cardBody{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.projectsTitle{
+  width: 60vw;
+  display: flex;
+  justify-content: flex-start;
+}
+.cardTitle {
   width: 300px;
-  
-  font-size: 40px;
-  
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
-.ptag{
+.linksHero {
+  text-decoration:none;
+}
+.cardImg {
+  width: 300px;
+
+}
+
+/* This is Project Section Homepage  */
+.testimonial {
+
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  height: 400px;
+}
+.testimonialCont{
+  background-image: url("https://wallpapercave.com/wp/wp3213874.jpg")
+  ;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-size: cover;
+  display: flex;
+  padding: 40px;
+  justify-content:space-evenly;
+  width: 930px;
+}
+
+.memojisLeft ,.memojisRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width : 100px ;
+}
+.imgTest{
+  border-radius: 100%;
+  margin: 10px;
+}
+.containerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h3tagTest{
+  color: #fefdfd;
+}
+.clientInformation {
+  display: flex;
+  align-items: center;
+}
+
+/* This is Services Section */
+
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content:center;
+  width: 800px;
+  gap: 30px;
+  align-items: center;
+}
+
+.servicesCard {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  height: 260px;
+  }
+  .servicesTitle{
+    width: 50vw;
+    display: flex;
+    justify-content:start;
+    align-self: center;
+  }
+  .cardTitles {
+    width: 200px;
+    font-size: 20px;
+  }
+  .linkS {
+    text-decoration:none;
+  }
+  .cardIcon {
+    width: 30px;
+  
+  }
+
+/* This is CTA Section */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  align-items: center; 
+}
+
+.ctaImg{
+  position: relative;
+  left: 40px;
+}
+
+.ctaCont{
+  padding: 100px;
+  width: 800px;
+  background-color: rgb(236, 198, 12);
+}
+
+.cta ,h2  {
+  text-align: center;
+ 
+}
+
+.formOuter {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border: 2px solid #eee;
+  padding: 5px 10px 5px 50px;
   font-size: 18px;
-  
+  line-height: 30px;
+  display: block;
+  width: 100%;
+  outline: 0;
 }
+
+.formInput {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.subscribeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color:rgba(7, 42, 200, 1);
+  color: aliceblue;
+  margin: 10px;
+  border: none;
+}
+
+
+/* This is Project Section ProjectPage  */
+.projectSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleProjectMain{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+ 
+}
+.mainProject{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectP{
+  width: 1000px;
+}
+/* This is Contact Us Section */
+.contactForm {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.contactTitle {
+  display:flex ;
+  justify-content:start;
+  width: 620px;
+}
+
+.inputName{
+  width: 600px;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  background-color: rgba(107, 112, 141, 0.1) ;
+
+}
+
+.inputEmail {
+  width: 250px;
+  height: 20px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(107, 112, 141, 0.1) ;
+}
+
+.phoneEmail{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.inputPhone {
+  width: 250px;
+  height: 20px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(107, 112, 141, 0.1) ;
+}
+
+.message {
+  width: 600px;
+  height: 100px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(107, 112, 141, 0.1) ;
+}
+
+.Submitbtn {
+  width: 620px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color:rgba(7, 42, 200, 1);
+  color: aliceblue;
+  border: none;
+}
+
+/* This is Footer */
+.ContainerFooter {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+.footerCont{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 30px 0 30px 0;
+}
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerRight {
+  display: flex;
+  gap: 30px;
+}
+.footerMenu {
+  margin-bottom: 10px;
+}
+
+.footerMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerMenu li {
+  margin-bottom: 5px;
+}
+
+/* This is responsve */
+@media only screen and (max-width: 400px) {
+  .imgLogo,.ContactUs {
+    display: none;
+  }
+   .navContainer , .navSizer {
+    width: 260px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .Container {
+    flex-wrap: wrap;
+   
+  }
+} 
+
+/* This is fetch */
+.firstProjectDes ,.secondProjectDes
+,.thirdProjectDes {
+  width: 200px;
+ 
+}
+
+
