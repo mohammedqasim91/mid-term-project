@@ -1,39 +1,35 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-
 /* This is body style */
-body{
+body {
   background-color: rgba(244, 246, 252, 1);
   font-family: sans-serif;
 }
 
-/* This is homepage navbar */
+/* This is homepage Navbar */
 .navContainer {
-  
  display: flex;
  justify-content: center;
  align-items: center;
-  
-  
 }
-.navSizer{
-  width: 800px;
+
+.navSizer {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content:space-evenly;
 }
+
 .navList {
     display: flex;
-    justify-content:space-evenly;
-    gap: 50px;
-    
+    justify-content:center;
+    gap: 30px; 
 }
 
 li {
 list-style: none;
 font-family: sans-serif;
 font-weight: bold;
-font-size: 12px;
+font-size: 14px;
 color: darkgray;
 }
 
@@ -106,12 +102,12 @@ width: 100%;
   width: 238px;
 }
 
-.htag{
+.hTag{
   width: 300px;
   font-size: 40px;
 }
 
-.ptag{
+.pTag{
   font-size: 18px;
 }
 
@@ -183,7 +179,7 @@ background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: flex-start;
 }
-.linksHero {
+.linksHero , a {
   text-decoration:none;
 }
 .cardImg {
@@ -193,7 +189,6 @@ background-color: rgb(255, 255, 255);
 
 /* This is Project Section Homepage  */
 .testimonial {
-
   display: flex;
   justify-content: center;
   padding: 25px;
@@ -476,22 +471,33 @@ width: 100%;
 }
 
 /* This is responsve */
-@media only screen and (max-width: 400px) {
-  .imgLogo,.ContactUs {
-    display: none;
-  }
-   .navContainer , .navSizer {
-    width: 260px;
-    padding: 2px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .Container {
-    flex-wrap: wrap;
-   
-  }
-} 
 
+/* navbar Responsive Styles */
+@media (max-width: 600px) {
+  .navSizer {
+    flex-wrap: wrap;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imgLogo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navList {
+    gap: 5px;
+  }
+
+  .ContactUs {
+    width: 80px;
+  }
+}
 /* This is fetch */
 .firstProjectDes ,.secondProjectDes
 ,.thirdProjectDes {
