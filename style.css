@@ -145,7 +145,7 @@ width: 100%;
 
 .pTag{
   font-size: 18px;
-  #transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 .getBtn {
