@@ -570,12 +570,14 @@ input {
  display: flex;
  flex-direction: column;
  align-items: center;
+ flex-wrap: wrap;
 }
 
 .contactTitle {
   display:flex ;
   justify-content:start;
   width: 620px;
+  flex-wrap: wrap;
 }
 
 .inputName{
@@ -603,6 +605,7 @@ input {
   display: flex;
   justify-content: center;
   gap: 80px;
+  flex-wrap: wrap;
 }
 
 .inputPhone {
