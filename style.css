@@ -91,23 +91,28 @@ width: 100%;
   justify-content:center;
   width: 100%;
   gap: 100px;
-  
- 
+  flex-wrap: wrap;
+  transition: ease-in-out;
 }
 
-.leftcontainer {
+.leftContainerHero {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 16px;
   align-items: center;
-  justify-content: center;
-  height: 400px;
-  width: 400px;
-  
+  transition: ease-in-out;
+  height: 600px;
+  width: 300px;
+  flex-wrap: wrap;
+}
+.hTag{
+  text-align: center;
+  transition: ease-in-out;
 }
 .rightcontainer {
   padding: auto 10px;
+  transition: ease-in-out;
 }
 
 .mainImg {
@@ -119,6 +124,7 @@ width: 100%;
   bottom: 350px;
   right: 480px;
   width: 238px;
+  transition: ease-in-out;
 }
  
 .cardtwo {
@@ -126,6 +132,7 @@ width: 100%;
   top: 400px;
   right: 230px;
   width: 238px;
+  transition: ease-in-out;
 }
 
 .hTag{
@@ -133,10 +140,12 @@ width: 100%;
   font-size: 40px;
   text-align: start;
   font-size: 36px;
+  transition: ease-in-out;
 }
 
 .pTag{
   font-size: 18px;
+  #transition: ease-in-out;
 }
 
 .getBtn {
@@ -157,6 +166,7 @@ width: 100%;
   background-color: rgba(244, 246, 252, 1);
   color:rgb(147, 145, 145) ;
   border: none;
+  transition: ease-in-out;
 }
 
 .logosLine {
@@ -165,6 +175,65 @@ width: 100%;
   width: 58vw;
   padding: 30px;
   filter: grayscale(100%);
+  flex-wrap: wrap;
+  transition: ease-in-out;
+}
+@media (max-width: 600px) {
+  .heroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .leftBtnCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out;
+  }
+  .rightcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    transition: ease-in-out;
+    
+
+  }
+  .logosLine{
+   flex-direction: column;
+   gap: 10px;
+   width: 300px;
+  
+   align-items: center;
+   justify-content: center;
+   transition: ease-in-out;
+  }
+  .mainImg{
+    width: 300px;
+  }
+  .cardone{
+
+    transition: ease-in-out;
+  position: relative;
+  bottom: 325px;
+  right: 112px;
+  width: 176px;
+}
+
+  
+  .cardtwo{
+  position: relative;
+  top: -283px;
+  left: 115px;
+  width: 155px;
+  transition: ease-in-out;
+  }
 }
 
 /* This is Project Section */
@@ -453,16 +522,23 @@ input {
 
 @media (max-width: 480px) {
   .ctaImg {
-    left: 20px;
+    left: -6px;
+    top: -5px;
   }
 
   .formInput {
-    flex-direction: column;
+    display: flex;  
+    align-items: center;
   }
 
   input {
     padding: 5px 10px;
     margin-bottom: 10px;
+  }
+  .subscribeBtn{
+    margin-top: 0px;
+    margin-left: 6px;
+    margin-bottom: 12px;
   }
 }
 
