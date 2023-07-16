@@ -122,7 +122,7 @@ width: 100%;
 .cardone {
   position: absolute;
   bottom: 350px;
-  right: 480px;
+  right: 520px;
   width: 238px;
   transition: ease-in-out;
 }
@@ -226,7 +226,6 @@ width: 100%;
   width: 176px;
 }
 
-  
   .cardtwo{
   position: relative;
   top: -283px;
@@ -300,8 +299,11 @@ a {
   .cardTitle {
     width: 100%;
   }
-
+  h3 , h4 , p {
+    text-align: justify;
+  }
   .cardBody {
+    display: flex;
     align-items: center;
     text-align: center;
   }
@@ -565,6 +567,7 @@ input {
 .projectP{
   width: 1000px;
 }
+
 /* This is Contact Us Section */
 .contactForm {
  display: flex;
